@@ -49,7 +49,7 @@ public class Whether {
         return this;
     }
 
-    void otherwise(Runnable action) {
+    public void otherwise(Runnable action) {
         if (!parentCondition && !alreadyRun) {
             action.run();
         }
